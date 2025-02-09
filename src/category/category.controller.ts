@@ -21,7 +21,7 @@ export class CategoryController {
   constructor(private readonly categoryService: CategoryService) {}
 
   @UseGuards(AuthGuard())
-  @Post()
+  @Post()                       
   create(
     @Body() createCategoryDto: CreateCategoryDto,
     @GetUser('admin') user: string,
