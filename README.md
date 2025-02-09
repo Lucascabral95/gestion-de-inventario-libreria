@@ -1,4 +1,4 @@
-# Twitter Clone
+# Gestión de Inventario para Librería
 
 ## Instalación
 
