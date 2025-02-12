@@ -64,7 +64,7 @@ export class CategoryService {
       const categoryById = await this
         .sql`SELECT * FROM category WHERE slug = ${id}`;
       if (categoryById.length === 0) {
-        throw new NotFoundException('Author not found');
+        throw new NotFoundException('Category not found');
       }
 
       return categoryById;
@@ -74,7 +74,7 @@ export class CategoryService {
       .sql`SELECT * FROM category WHERE id = ${id}`;
 
     if (categoryById.length === 0) {
-      throw new NotFoundException('Author not found');
+      throw new NotFoundException('Category not found');
     }
 
     return categoryById;

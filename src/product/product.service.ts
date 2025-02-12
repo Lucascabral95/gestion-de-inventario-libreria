@@ -14,7 +14,8 @@ import { neon } from '@neondatabase/serverless';
 import { ConfigService } from '@nestjs/config';
 import { v4 as uuid } from 'uuid';
 import { join } from 'path';
-import { existsSync } from 'fs';
+// import { existsSync } from 'fs';
+import { existsSync, mkdirSync } from 'fs';
 
 @Injectable()
 export class ProductService {
